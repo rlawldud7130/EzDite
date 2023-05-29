@@ -12,6 +12,11 @@ namespace EzDite
         public float weight;
         public float bmi;
         public (int, float) goal;
+
+        private void Start()
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
 }
 

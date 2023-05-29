@@ -15,6 +15,8 @@ public class EnterImpo : MonoBehaviour
     public Text bmi;
     public Text bmiResult;
     public Image bmiResultBox;
+    public InputField goalImpo1;
+    public InputField goalImpo2;
 
     private int page = 0;
     private string[] textList = new string[3] { "나이를 입력하세요.", "오늘의 키를 입력하세요.", "오늘의 몸무게를 입력하세요." };
@@ -51,20 +53,27 @@ public class EnterImpo : MonoBehaviour
         {
             EzDite.ImpoManager.Instance.weight = int.Parse(input.text);
             EzDite.ImpoManager.Instance.bmi = EzDite.ImpoManager.Instance.weight / Mathf.Pow(EzDite.ImpoManager.Instance.height / 100, 2);
-            if (EzDite.ImpoManager.Instance.goal == (0, 0.0f))
-            {
-                SetGoal();
-            }
-            else
+            if (EzDite.ImpoManager.Instance.goal != (0, 0.0f))
             {
                 SceneManager.LoadScene("2. Main");
             }
-
-            return;
+            else
+            {
+                SetGoal();
+            }
+        }
+        else if(page == 3)
+        {
+            if (goalImpo1.text != null && goalImpo2.text != null)
+            {
+                EzDite.ImpoManager.Instance.goal = (int.Parse(goalImpo2.text), float.Parse(goalImpo1.text));
+                SceneManager.LoadScene("2. Main");
+            }
         }
 
         page++;
-        SetText();
+        if(page <= 2)
+            SetText();
     }
 
     private void SetGoal()

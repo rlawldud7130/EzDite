@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/01 Scenes/0. Intro.unity
+    path: Assets/01 Scenes/0. Intro 1.unity
+    guid: 12d333236c62dbb4a8dab56f1906b0da
+  - enabled: 1
+    path: Assets/01 Scenes/0. Intro 2.unity
     guid: 3bb17876b43abd643a28aeba9fde1433
   - enabled: 1
     path: Assets/01 Scenes/1. EnterImpo.unity
@@ -17,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01 Scenes/2. Main.unity
     guid: cc7a63c877490404f956f3b633ea090f
+  - enabled: 1
+    path: "Assets/01 Scenes/3-1. \uC2DD\uB2E8\uCD94\uCC9C.unity"
+    guid: 2bd9d8142688b2c4da28bb41e802634d
+  - enabled: 1
+    path: "Assets/01 Scenes/3-2. \uC2DD\uB2E8\uC18C\uAC1C.unity"
+    guid: 21c85b89a4b342d43af8a95587c09b60
+  - enabled: 1
+    path: "Assets/01 Scenes/3-3. \uCE7C\uB85C\uB9AC \uACC4\uC0B0.unity"
+    guid: 13df7a977dc8ad448a809c33e7eb5c97
+  - enabled: 1
+    path: "Assets/01 Scenes/4. \uC2DD\uB2E8\uAE30\uB85D.unity"
+    guid: 8ca02b24ba76e2341bbcf5d19fbc789b
+  - enabled: 1
+    path: "Assets/01 Scenes/5. \uC6B4\uB3D9\uCD94\uCC9C.unity"
+    guid: f4ee93b2d22865f41a0e27cbd4dabde6
+  - enabled: 1
+    path: "Assets/01 Scenes/6. \uD504\uB85C\uD544.unity"
+    guid: 485950918235b514abc32cad47d5ecb3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
